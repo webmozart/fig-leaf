@@ -77,6 +77,7 @@ differ in how they are implemented.
  * @param string $logical_sep The logical separator in the logical path.
  * @param string $base_dir The base directory for the transformation.
  * @param string $file_ext An optional file extension.
+ * @return string The logical path transformed into a file system path.
  */
 function transform(
     $logical_path,
