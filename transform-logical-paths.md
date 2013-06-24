@@ -71,34 +71,35 @@ differ in how they are implemented.
  * Example implementation.
  * 
  * Note that this is only an example, and is not a specification in itself.
+ * 
+ * @param string $logical_path The logical path to transform.
+ * @param string $logical_prefix The logical prefix associated with $base_dir.
+ * @param string $logical_sep The logical separator in the logical path.
+ * @param string $base_dir The base directory for the transformation.
+ * @param string $file_ext An optional file extension.
  */
 function transform(
     $logical_path,
     $logical_prefix,
-    $logical_separator,
-    $base_directory,
-    $file_extension = null
+    $logical_sep,
+    $base_dir,
+    $file_ext = null
 ) {
     // make sure the logical prefix ends in a separator
-    $logical_prefix = rtrim($logical_prefix, $logical_separator)
-                    . $logical_separator;
+    $logical_prefix = rtrim($logical_prefix, $logical_sep)
+                    . $logical_sep;
     
     // make sure the base directory ends in a separator
-    $base_directory = rtrim($base_directory, DIRECTORY_SEPARATOR)
+    $base_directory = rtrim($base_dir, DIRECTORY_SEPARATOR)
                     . DIRECTORY_SEPARATOR;
     
     // find the logical suffix 
     $logical_suffix = substr($logical_path, strlen($logical_prefix));
     
-    // transform the logical suffix to a relative file system path
-    $relative_path = str_replace(
-        $logical_separator,
-        DIRECTORY_SEPARATOR,
-        $logical_suffix
-    );
-    
-    // return the file system path
-    return $base_directory . $relative_path . $file_extension;
+    // transform into a file system path
+    return $base_dir
+         . str_replace($logical_sep, DIRECTORY_SEPARATOR, $logical_suffix)
+         . $file_ext;
 }
 
 /**
