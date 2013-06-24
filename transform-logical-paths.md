@@ -32,9 +32,9 @@ a _fully qualified logical path_ of `/Foo/Bar/Baz`.
 **Logical Path Suffix**: Given a _fully qualified logical path_ and a
 _logical path prefix_, the _logical path suffix_ is the remainder of the
 _fully qualified logical path_ after the _logical path prefix_. For example,
-given a logical separator "/", a _fully qualified logical path_ of
-`/Foo/Bar/Baz/Qux`, and a logical path prefix of `/Foo/Bar/`, then `Baz/Qux`
-is the relative path.
+given a _logical separator_ of "/", a _fully qualified logical path_ of
+`/Foo/Bar/Baz/Qux`, and a _logical path prefix_ of `/Foo/Bar/`, then `Baz/Qux`
+is the _logical path suffix_.
 
 **File System Base Directory**: A directory in the file system associated with
 a logical path prefix.
