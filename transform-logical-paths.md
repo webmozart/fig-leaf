@@ -1,5 +1,5 @@
-Transformation Of Logical Paths To File System Paths
-====================================================
+PSR-T: Transformation Of Logical Paths To File System Paths
+===========================================================
 
 This document describes an algorithm to transforms a logical path to a file
 system path. Among other things, this general-purpose tranformation algorithm
