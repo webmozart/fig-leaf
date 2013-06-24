@@ -120,7 +120,7 @@ transform(
     ':Foo:Bar:Baz:Qux',
     ':Foo:Bar:',
     ':',
-    '/path/to/foo-bar/resource',
+    '/path/to/foo-bar/config',
     '.yml'
 );
 
