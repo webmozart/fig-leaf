@@ -13,7 +13,7 @@ interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
 1. Definitions
 --------------
 
-**Logical Separator**: A single character to delimit logical segments; for
+**Logical Separator**: A single character to delimit _logical segments_; for
 example, a slash, backslash, colon, etc.
 
 **Logical Segment**: A string delimited by _logical separators_.
