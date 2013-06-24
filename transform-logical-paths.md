@@ -38,7 +38,7 @@ given a _logical separator_ of "/", a _fully qualified logical path_ of
 is the _logical path suffix_.
 
 **File System Base Directory**: A directory in the file system associated with
-a logical path prefix.
+a _logical path prefix_.
 
 
 2. Specification
