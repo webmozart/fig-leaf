@@ -74,8 +74,8 @@ differ in how they are implemented.
 function transform(
     $logical_path,
     $logical_prefix,
-    $base_directory,
     $logical_separator,
+    $base_directory,
     $file_extension = null
 ) {
     // make sure the logical prefix ends in a separator
@@ -107,8 +107,8 @@ function transform(
 transform(
     '\Foo\Bar\Baz\Qux',
     '\Foo\Bar',
-    '/path/to/foo-bar/src',
     '\\',
+    '/path/to/foo-bar/src',
     '.php'
 );
 
@@ -116,8 +116,8 @@ transform(
 transform(
     ':Foo:Bar:Baz:Qux',
     ':Foo:Bar:',
-    '/path/to/foo-bar/resource',
     ':',
+    '/path/to/foo-bar/resource',
     '.yml'
 );
 
@@ -125,7 +125,7 @@ transform(
 transform(
     '/Foo/Bar/Baz/Qux',
     '/Foo/Bar',
-    '/path/to/foo-bar/resources',
-    '/'
+    '/',
+    '/path/to/foo-bar/resources'
 );
 ```
