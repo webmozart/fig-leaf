@@ -53,7 +53,7 @@ separator, implementations:
 - MUST replace logical path separators in the logical path suffix with
   directory separators, and
 
-- MAY append an optional file name extension.
+- MAY append a file name extension.
 
 The result is a file system path that MAY exist.
 
