@@ -118,7 +118,7 @@ transform(
 // ":Foo:Bar:Baz:Qux" => "/path/to/foo-bar/config/Baz/Qux.yml"
 transform(
     ':Foo:Bar:Baz:Qux',
-    ':Foo:Bar:',
+    ':Foo:Bar',
     ':',
     '/path/to/foo-bar/config',
     '.yml'
