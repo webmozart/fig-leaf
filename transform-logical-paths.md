@@ -91,14 +91,14 @@ function transform(
                     . $logical_sep;
     
     // make sure the base directory ends in a separator
-    $base_directory = rtrim($base_dir, DIRECTORY_SEPARATOR)
-                    . DIRECTORY_SEPARATOR;
+    $base_dir = rtrim($base_dir, DIRECTORY_SEPARATOR)
+              . DIRECTORY_SEPARATOR;
     
     // find the logical suffix 
     $logical_suffix = substr($logical_path, strlen($logical_prefix));
     
     // transform into a file system path
-    return $base_directory
+    return $base_dir
          . str_replace($logical_sep, DIRECTORY_SEPARATOR, $logical_suffix)
          . $file_ext;
 }
