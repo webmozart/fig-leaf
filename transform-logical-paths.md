@@ -98,7 +98,7 @@ function transform(
     $logical_suffix = substr($logical_path, strlen($logical_prefix));
     
     // transform into a file system path
-    return $base_dir
+    return $base_directory
          . str_replace($logical_sep, DIRECTORY_SEPARATOR, $logical_suffix)
          . $file_ext;
 }
