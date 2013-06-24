@@ -24,10 +24,11 @@ separator_ of "/", then `/`, `/Foo`, and `/Foo/Bar` are _fully
 qualified logical paths_.
 
 **Logical Path Prefix**: A logical path prefix is any contiguous series of
-_logical segments_ and _logical separators_ at the beginning of a
-_fully qualified logical path_. For example, given a _logical separator_ of
-"/", then `/`, `/Foo/`, and `/Foo/Bar/` are valid _logical path prefixes_ for
-a _fully qualified logical path_ of `/Foo/Bar/Baz`.
+_logical separators_ and _logical segments_ at the beginning of a
+_fully qualified logical path_, terminating in a _logical separator_. For
+example, given a _logical separator_ of "/", then `/`, `/Foo/`, and `/Foo/Bar/`
+are _logical path prefixes_ for a _fully qualified logical path_ of
+`/Foo/Bar/Baz`.
 
 **Logical Path Suffix**: Given a _fully qualified logical path_ and a
 _logical path prefix_, the _logical path suffix_ is the remainder of the
